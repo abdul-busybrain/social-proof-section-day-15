@@ -1,0 +1,144 @@
+/* css reset */
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /* ### Neutral */
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+
+  /* font */
+  --League-Spartan: "League Spartan", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: var(--League-Spartan);
+  background-image: url("./images/bg-pattern-top-desktop.svg"),
+    url("./images/bg-pattern-bottom-desktop.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 115rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+.up-container {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.up-text {
+  width: 50%;
+  padding-right: 5rem;
+}
+.header {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--Very-Dark-Magenta);
+}
+.description {
+  color: var(--Dark-Grayish-Magenta);
+  font-weight: 500;
+}
+
+.stars {
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 1rem 2rem;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+.stars span {
+  margin-left: 2rem;
+  color: var(--Very-Dark-Magenta);
+}
+.two {
+  margin-left: 2rem;
+}
+.three {
+  margin-left: 4rem;
+}
+.down-container {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.card,
+.header,
+.description {
+  text-align: left;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile img {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  border-radius: 50%;
+}
+
+.card {
+  background-color: var(--Very-Dark-Magenta);
+  padding: 2rem;
+  color: var(--White);
+  border-radius: 0.5rem;
+}
+
+.info p:first-child {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.info p:last-child {
+  color: var(--Soft-Pink);
+}
+
+.card-one {
+  margin-bottom: 2rem;
+}
+
+.card-two {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-three {
+  margin-top: 2rem;
+}
